@@ -27,7 +27,7 @@ namespace ClipboardHero
         {
             return new ToolInfo("Clipboard Hero",
                                 "ClipboardHero",
-                                "Micah", "1.0", "Clipboard utility tool.");
+                                "Micah", "0.0.2.0", "Clipboard utility tool.");
         }
 
         // Dispose(bool disposing) executes in two distinct scenarios.
