@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\mToolkitFramework\mToolkit Platform Component Library\mToolkit Platform Component Library.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /Y &quot;$(TargetDir)*.*&quot; &quot;C:\Repos\mToolkitFramework\mToolkit Platform Desktop Application\bin\Debug\net6.0-windows\Tools\ClipboardHero\&quot;&#xA;" />
+  </Target>
+
+</Project>
